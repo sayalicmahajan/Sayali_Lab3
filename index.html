@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Tip Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="main-tab">
+        <!-- Calculator Container -->
+        <div class="calculator-header">
+            <!-- Add Name Above the Title -->
+            <h2 id="userName">ITMD 4/541-Lab 3-Sayali Mahajan</h2>
+            <h1>Tip Calculator</h1>
+            
+            <!-- Currency Conversion Tab -->
+            <div class="currency-info">
+                <p><strong>Currency Conversion:</strong></p>
+                <p>$1 USD = ₹84.07 INR</p>
+                <p>$1 USD = ₽93.20 RUB</p>
+                <p>$1 USD = ¥149.34 JPY</p>
+            </div>
+        </div>
+        
+        <form id="tipForm">
+            <!-- Bill Total Input -->
+            <label for="billTotal">Bill Total ($):</label>
+            <input type="text" id="billTotal" name="billTotal" placeholder="Enter bill amount">
+
+            <!-- Currency Selector -->
+            <label for="currency">Select Currency:</label>
+            <select id="currency">
+                <option value="1">USD ($)</option>
+                <option value="84.07">INR (₹)</option>
+                <option value="149.34">JPY (¥)</option>
+                <option value="93.20">RUB (₽)</option>
+            </select>
+
+            <!-- Tip Percentage Slider -->
+            <label for="tipPercentage">Tip Percentage:</label>
+            <input type="range" id="tipPercentage" min="0" max="100" value="10" step="1">
+            <input type="text" id="tipPercentageDisplay" value="10%" disabled>
+
+            <!-- Tip Amount Display -->
+            <label for="tipAmount">Tip Amount</label>
+            <input type="text" id="tipAmount" name="tipAmount" disabled>
+
+            <!-- Total Bill with Tip Display -->
+            <label for="totalWithTip">Total Bill with Tip ($):</label>
+            <input type="text" id="totalWithTip" name="totalWithTip" disabled>
+
+            <!-- Converted Total Bill -->
+            <label for="convertedTotal">Converted Total Bill:</label>
+            <input type="text" id="convertedTotal" disabled>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

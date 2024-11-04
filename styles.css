@@ -1,0 +1,74 @@
+/* Body Styling to Center the Main Calculator */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    margin: 0;
+    background-color: #f0f4f8; /* Optional: Background color for the webpage */
+}
+
+/* Main Calculator Container */
+.main-tab {
+    width: 650px;
+    padding: 20px;
+    background-color: #e3f2fd; /* Background color for the calculator box */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    font-size: 18px; /* Font size for calculator text */
+    box-sizing: border-box; /* Ensure padding doesn't affect total width */
+}
+
+/* Name Styling Inside Calculator */
+#userName {
+    font-size: 20px; /* Adjust font size */
+    color: #333; /* Adjust color if needed */
+    margin: 0;
+    text-align: center;
+}
+
+/* Header Styling */
+h1 {
+    margin: 5px 0 15px 0; /* Adjust spacing around the main title */
+    font-size: 24px; /* Font size for main header */
+    text-align: center;
+}
+
+/* Header and Currency Info Styling */
+.calculator-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.currency-info {
+    background-color: #d1d5db; /* Background color for currency info */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    font-size: 14px; /* Font size for currency info */
+    margin-top: 10px;
+    max-width: 200px;
+    text-align: left;
+}
+
+/* Other Styles for Labels and Inputs */
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 18px; /* Font size for labels */
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px; /* Font size for text inputs and select dropdown */
+}
+
+input[type="range"] {
+    width: 100%;
+    margin-top: 10px;
+}
